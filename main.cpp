@@ -8,13 +8,8 @@
 #include "platform/mbed_thread.h"
 #include "gyro_l3gd20h.h"
 
- 
-//#include "vl53l0x.h"
-
-
 // Default is 9600 8N1  This is a global  
 Serial pc(USBTX, USBRX,"Gyro", 115200); // tx, rx 
-//I2C i2c(I2C_SDA, I2C_SCL);
 
 
 // Blinking rate in milliseconds
@@ -81,7 +76,6 @@ int main()
                 gyro.z);
        
         if (button1  == false) {   // Pulled low to ground so it means the button is pressed 
-            //pc.printf("Button1 pressed\n");
             for(i = 0 ; i < 10; i++) {
                 led4 = !led4;
                 thread_sleep_for(40);
@@ -90,7 +84,6 @@ int main()
             }
         }
         if(button2 == false ) {
-            // pc.printf("Button2 pressed\n");
         }
 
     } /* End of while(true) runloop */
