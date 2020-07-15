@@ -9,7 +9,7 @@
 #include "gyro_l3gd20h.h"
 
 // Default is 9600 8N1  This is a global  
-Serial pc(USBTX, USBRX,"Gyro", 115200); // tx, rx 
+Serial pc(USBTX, USBRX,"Gyro", 38400); // tx, rx 
 
 
 // Blinking rate in milliseconds

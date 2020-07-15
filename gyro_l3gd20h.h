@@ -1,3 +1,5 @@
+#ifndef __jwsTWI_gyro_l3gd20hpp__
+#define __jwsTWI_gyro_l3gd20hpp__
 /**
 * @file gyro-l3gd20h.h
 * @brief Implementation of the L3GD20H gyro chip for ARM embed projects
@@ -5,8 +7,6 @@
 * @date 7/9/2020 
 */
 
-#ifndef __jwsTWI_MCP4725__gyro_l3gd20hpp__
-#define __jwsTWI_MCP4725__gyro_l3gd20hpp__
 
 #include "mbed.h"
 #include "platform/mbed_thread.h"
